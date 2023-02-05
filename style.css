@@ -86,6 +86,7 @@ input:focus {
 
 .social-links {
     margin: 0.5rem;
+    padding-inline-start: 0px;
 }
 
 .list-non-bullet {
