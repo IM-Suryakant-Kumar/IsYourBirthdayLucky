@@ -15,3 +15,7 @@ This App could checks if your birthday is lucky or not via calculating divission
 - HTML
 - CSS
 - JavaScript
+
+## Preview
+
+  ![Lucky-Birthday](https://user-images.githubusercontent.com/66691162/216837624-80357492-1f23-4d02-a86e-0c9db47c6a64.png)
