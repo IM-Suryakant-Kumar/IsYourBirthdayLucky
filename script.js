@@ -1,11 +1,16 @@
 const dob = document.querySelector("#dob");
 const luckyNumber = document.querySelector("#lucky-number");
-const button = document.querySelector(".button");
+const button = document.querySelector("#check");
 const message = document.querySelector(".message");
+const resetBtn = document.querySelector('#reset');
 
-button.addEventListener("click", () => {
+
+resetBtn.addEventListener('click', () => message.style.display = 'none')
+
+button.addEventListener("click", (event) => {
   //   console.log("DateOfBirth :", dob.value);
   //   console.log("Lucky Number :", luckyNumber.value);
+  event.preventDefault();
   let date = dob.value;
   date = date.replaceAll("-", "");
   date = Number(date);
@@ -19,12 +24,12 @@ button.addEventListener("click", () => {
 
   // Check If lucky
   if (sum % Number(luckyNumber.value) === 0) {
-    showMsg("Your birthday is lucky");
+    showMsg("Your birthday is lucky 😊");
   } else {
-    showMsg("Your birthday is NOT lucky, so sad");
+    showMsg("Your birthday is NOT lucky, so sad 😞");
   }
 });
 
 function showMsg(msg) {
-    message.innerText = msg;
+  message.innerText = msg;
 }

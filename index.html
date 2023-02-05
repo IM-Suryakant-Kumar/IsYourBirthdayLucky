@@ -7,31 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky Birthday</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome CDN-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <!-- ex02: check if the birthday is lucky? -->
-
-    <!-- input DateOfBirth -->
-    <div class="dob">
-        <label for="dob">Date Of Birth :</label>
-        <input type="date" id="dob">
+    <div class="container">
+        <h1>Is Your Birthday Lucky?</h1>
+        <form action="">
+            <label for="dob">Enter Date Of Birth :</label>
+            <input type="date" id="dob" max="2022-01-01">
+            <label for="lucky-number">Lucky Number</label>
+            <input type="number" id="lucky-number">
+            <p class="notice">Privacy note: We don't store any data</p>
+            <button class="btn" id="check">Check</button>
+            <button type="reset" class="btn" id="reset">Reset</button>
+        </form>
+        <div class="message"></div>
     </div>
 
-    <!-- Input LuckyNumber -->
-    <div class="lucky-number">
-        <label for="lucky-number">Lucky Number</label>
-        <input type="number" id="lucky-number">
-    </div>
-
-    <!-- Button -->
-    <div class="button">
-        <button class="button">Click :</button>
-    </div>
-
-    <!-- Message -->
-    <div class="message"></div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-heading">Connect with Me</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="https://github.com/IM-Suryakant-Kumar"><i class="fa-brands fa-github-alt"></i></a>
+            </li>
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/Suryakant_91"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/suryakant-kumar/"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+        <h4> &copy; | 2023 | Suryakant </h4>
+    </footer>
 
     <!-- Script Section -->
     <script src="./script.js"></script>
