@@ -76,7 +76,7 @@ input:focus {
     background-color: var(--primary-color);
     border-top-left-radius: 2rem;
     border: 1px solid var(--secondary-color);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
